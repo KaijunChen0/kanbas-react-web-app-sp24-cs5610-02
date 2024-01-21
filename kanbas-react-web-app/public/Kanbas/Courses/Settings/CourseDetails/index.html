@@ -11,7 +11,7 @@
         <tbody>
             <tr >
                 <td>
-                    <a href="" style="text-decoration: none">Course Details | </a>
+                    <a href="../CourseDetails/screen.html" style="text-decoration: none">Course Details | </a>
                 </td>
 
                 <td>
@@ -88,7 +88,7 @@
 
             <tr><!--time zone-->
                 <td>
-                    Time Zone:
+                    <label for="select-time-zone">Time Zone:</label>
                 </td>
                 <td>
                     <select name="select-time-zone" id="select-time-zone">
@@ -125,11 +125,10 @@
             </tr>
 
             <tr><!--participation-->
-                <td>
-                    Participation:
+                <td valign="top">
+                    <p>Participation:</p>
                 </td>
-
-                <td>
+                <td valign="top">
                     <p>
                         <select name="select-term" id="select-term">
                             <option value="TERM">Term</option>
@@ -161,11 +160,120 @@
                 </td>
             </tr>
 
-            <tr><!--defaut due time-->
-                
+            <tr><!--default due time-->
+                <td valign="top"><label for="select-default-due-time">Default due time:</label></td>
+                <td valign="top">
+                    <select name="select-default-due-time" id="select-default-due-time">
+                        <option value="DEFAULTDUETIME">Account default(11:59pm)</option>
+                    </select>
+                    <p>
+                        This influences the user interface for setting due dates. It does not change the time due for any existing assignments.
+                    </p>
+            </tr>
+
+            <tr><!--language-->
+                <td valign="top"><label for="select-language">Language:</label></td>
+                <td valign="top">
+                    <select name="select-language" id="select-language">
+                        <option value="DEFAULTLANGUAGE">Not set (user-configurable, defaults to English(Unit))</option>
+                    </select>
+                    <p>
+                        This will override any user/system language preferences. This is only recommanded for foreign language courses.
+                    </p>
+            </tr>
+
+            <tr><!--file storage-->
+                <td>File Storage:</td>
+                <td>10000 megabytes</td>
+            </tr>
+
+            <tr><!--large course-->
+                <td>Large Course:</td>
+                <td>
+                    <input type="checkbox" id="checkbox-large-course">
+                    <label for="checkbox-large-course">Launch SpeedGrader Filtered by Student Group</label>
+                </td>
+
+            </tr>
+
+            <tr><!--Grade scheme-->
+                <td>Grading Scheme:</td>
+                <td>
+                    <input type="checkbox" id="checkbox-grading-scheme">
+                    <label for="checkbox-grading-scheme">Enable course grading scheme</label>
+                </td>
+            </tr>
+
+            <tr><!--licese-->
+                <td><label for="select-license">License:</label></td>
+                <td>
+                    <select name="select-license" id="select-license">
+                        <option value="PRIVATE">Private(Copyrighted)</option>
+                    </select>
+                </td>
+            </tr>
+
+            <tr><!--file copyright-->
+                <td>File Copyright:</td>
+                <td>
+                    <input type="checkbox" id="checkbox-file-copyright">
+                    <label for="checkbox-file-copyright">Copyright and license information must be provided for files before they are published.</label>
+                </td>
+            </tr>
+
+            <tr><!--visibility-->
+                <td valign="top">
+                    <label for="select-visibility">Visibility:</label>
+                </td>
+                <td>
+                    If you need to make your course public please contact your administrator/support.<br />
+                    <select name="select-visibility" id="select-visibility">
+                        <option value="COURSE">Course</option>
+                    </select>
+                    <p>
+                        <input type="checkbox" id="checkbox-include-public">
+                        <label for="checkbox-include-public">Include this course in the public course index</label>
+                    </p>
+                </td>
+            </tr>
+
+            <tr> <!--format-->
+                <td>
+                    <label for="select-format">Format:</label>
+                </td>
+                <td>
+                    <select name="select-format" id="select-format">
+                        <option value="ONCAMPUS">On-Campus</option>
+                    </select>
+                </td>
+            </tr>
+
+            <tr><!--mastery paths-->
+                <td>
+                    Mastery Paths:
+                </td>
+                <td>
+                    <input type="checkbox" id="checkbox-mastery-paths">
+                    <label for="checkbox-mastery-paths">Enable individual learning paths for students based on assessment</label>
+                </td>
+            </tr>
+
+            <tr><!--Description-->
+                <td>
+                    Description:
+                </td>
+                <td>
+                    <textarea name="text-description" id="text-description" cols="30" rows="10"></textarea>
+                    <p><a href="#" style="text-decoration: none; color: red;" >more options</a></p>
+                </td>
             </tr>
         </tbody>
     </table>
+    <hr>
+
+    <div align="right">
+        <button type="submit">Update Course Details</button>
+    </div>
 
 </body>
 </html>
