@@ -45,41 +45,51 @@
     </p>
 
     <table>
-        <tr>
-            <td align="center">
-                <label for="text-title"><b>Title</b></label><br />
-                <input type="text" id="text-title" name="text-title" style="margin-top: 5px;" value="YouTube">
-            </td>
+        <tbody>
+            <tr>
+                <td align="center">
+                    <label for="text-title"><b>Title</b></label><br />
+                    <input type="text" id="text-title" name="text-title" style="margin-top: 5px;" value="YouTube">
+                </td>
+    
+                <td valign="bottom">
+                    &rarr;
+                </td>
+    
+                <td align="center">
+                    <label for="text-url"><b>URL</b></label><br />
+                    <input type="text" id="text-url" name="text-url" style="margin-top: 5px;" value="https://www.youtube.com/">
+                </td>
+    
+                <td valign="bottom">
+                    <form action="" method="get">
+                        <a href="#">Remove</a>
+                    </form>
+                </td>
+            </tr>
+            <tr>
+                <td><button type="submit">Add another link</button></td>
+            </tr>
 
-            <td valign="bottom">
-                &rarr;
-            </td>
+            <tr>
+                <td>
+                    <button type="button">Cancel</button>
+                    <form action="../../Profile/screen.html" method="get">
+                        <button type="submit">Save Profile</button>
+                    </form>
+                </td>
+            </tr>
 
-            <td align="center">
-                <label for="text-url"><b>URL</b></label><br />
-                <input type="text" id="text-url" name="text-url" style="margin-top: 5px;" value="https://www.youtube.com/">
-            </td>
-
-            <td valign="bottom">
-                <form action="" method="get">
-                    <a href="#">Remove</a>
-                </form>
-            </td>
-        </tr>
-
-        <tr>
-            <button type="submit">Add another link</button><br />
-            <button type="button">Cancel</button>&nbsp; <!--add space-->
-            <form action="../../Profile/screen.html" method="get">
-                <button type="submit">Save Profile</button><br />
-            </form>
-            <button type="button">Edit Profile</button>&nbsp; 
-            <form action="../../Profile/screen.html" method="get">
-                <button type="submit">Cancel Editing</button><br />
-            </form>
-        </tr>
+            <tr>
+                <td>
+                    <button type="button">Edit Profile</button>&nbsp; 
+                     <form action="../../Profile/screen.html" method="get">
+                        <button type="submit">Cancel Editing</button>
+                    </form>
+                </td>
+            </tr>
+        </tbody>
     </table>
 
-    
 </body>
 </html>

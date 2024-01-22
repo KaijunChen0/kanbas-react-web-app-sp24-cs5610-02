@@ -100,6 +100,18 @@
                         <input type="checkbox" name="checkbox-file-uploads" id="checkbox-file-uploads" value="checkbox-file-uploads">
                         <label for="checkbox-file-uploads">File Uploads</label><br />
                     </p>
+
+                    <p>
+                        <label for="">Group Assignments</label><br />
+                        <input type="checkbox" name="ga-checkbox-text-entry" id="ga-checkbox-text-entry" value="TEXTENTRY">
+                        <label for="ga-checkbox-text-entry">Text Entry</label><br />
+                    </p>
+                
+                    <p>
+                        <label for="">Peer Reviews</label><br />
+                        <input type="checkbox" name="pr-checkbox-text-entry" id="pr-checkbox-text-entry" value="TEXTENTRY">
+                        <label for="pr-checkbox-text-entry">Text Entry</label><br />
+                    </p>
                 
                     <p>
                         Assign<br />
@@ -123,8 +135,10 @@
                     </p>
                 
                     <p>
-                        <button type="button">Cancel</button>
-                        <button type="button">Save</button>
+                        <form action="../screen.html" method="get">
+                            <button type="submit" >Cancel</button>
+                            <button type="submit">Save</button>
+                        </form>
                     </p>
                 </td>
             </tr>
